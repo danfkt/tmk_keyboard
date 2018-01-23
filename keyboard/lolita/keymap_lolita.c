@@ -16,7 +16,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 **********************************************************************************
 *** Title: Noppoo Lolita Spyder hand wired custom firmware
-*** Author: Fekete Daniel
+*** Author: Daniel Fekete
 *** Version: 0.1
 *** MCU: Atmega 32u4
 *** Hardware: Teensy 2.0
@@ -35,7 +35,7 @@ const uint8_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         TAB, Q,   W,   E,   R,   T,   Y,   U,   I,   O,   P,   LBRC,RBRC,BSLS,      DEL, END, PGDN, \
         CLCK, A,   S,   D,   F,   G,   H,   J,   K,   L,   SCLN,QUOT,     ENT,                      \
         LSFT,     Z,   X,   C,   V,   B,   N,   M,   COMM,DOT, SLSH,     RSFT,           UP,        \
-        LCTL,LGUI,LALT,               SPC,               RGUI, FN0,  RGUI,RCTL,     LEFT,DOWN,RGHT),
+        LCTL,TRNS,LALT,               SPC,               RALT, FN0, LGUI,RCTL,      EFT,DOWN,RGHT),
     /* Layer 1: Fn Media Layer */
     KEYMAP(\
         TRNS,     MPRV,MPLY,MNXT,MSTP,TRNS,TRNS,TRNS,TRNS, F9, F10 , F11,TRNS,      TRNS,TRNS,SLEP, \
@@ -43,7 +43,7 @@ const uint8_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,      TRNS,TRNS,TRNS, \
         TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,     TRNS,                      \
         TRNS,TRNS,TRNS,CALC,TRNS,TRNS,TRNS,MYCM,TRNS,TRNS,TRNS,          TRNS,           TRNS,      \
-        TRNS,TRNS,TRNS,          TRNS,               TRNS,TRNS,     TRNS,TRNS,      TRNS,TRNS,TRNS),
+        TRNS,LGUI,TRNS,          TRNS,               TRNS,TRNS,     TRNS,TRNS,      TRNS,TRNS,TRNS),
 };
 
 
