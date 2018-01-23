@@ -16,7 +16,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 **********************************************************************************
 *** Title: Noppoo Lolita Spyder hand wired custom firmware
-*** Author: Fekete Daniel
+*** Author: Daniel Fekete 
 *** Version: 0.1
 *** MCU: Atmega 32u4
 *** Hardware: Teensy 2.0
