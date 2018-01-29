@@ -39,7 +39,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
  * pin: B0  B1  B2  B3  B7  D0
  */ 
  
- #include <stdint.h>
+#include <stdint.h>
 #include <stdbool.h>
 #include <avr/io.h>
 #include <util/delay.h>
