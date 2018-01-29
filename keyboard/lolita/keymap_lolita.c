@@ -21,7 +21,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 *** MCU: Atmega 32u4
 *** Hardware: Teensy 2.0
 *** Creation date: 2018.01.08.
-*** Last modification date: 2018.01.10.
+*** Last modification date: 2018.01.29.
 **********************************************************************************
 */
 
@@ -30,12 +30,12 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 const uint8_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     /* Layer 0: ANSI Qwerty Layer */
     KEYMAP(\
-        ESC,      F1,  F2,  F3,  F4,  F5,  F6,  F7,  F8, MUTE,VOLD,VOLU,  F12,      PSCR,SLCK,PAUS, \
-        GRV, 1,   2,   3,   4,   5,   6,   7,   8,   9,   0,   MINS,EQL, BSPC,      INS, HOME,PGUP, \
-        TAB, Q,   W,   E,   R,   T,   Y,   U,   I,   O,   P,   LBRC,RBRC,BSLS,      DEL, END, PGDN, \
-        CLCK, A,   S,   D,   F,   G,   H,   J,   K,   L,   SCLN,QUOT,     ENT,                      \
-        LSFT,     Z,   X,   C,   V,   B,   N,   M,   COMM,DOT, SLSH,     RSFT,           UP,        \
-        LCTL,TRNS,LALT,               SPC,               RALT, FN0, LGUI,RCTL,      EFT,DOWN,RGHT),
+        ESC,      F1,  F2,  F3,  F4,  F5,  F6,  F7,  F8, MUTE,VOLD,VOLU,  F12,            PSCR,SLCK,PAUS, \
+        GRV, 1,   2,   3,   4,   5,   6,   7,   8,   9,   0,   MINS,EQL, BSPC,                       INS, HOME,PGUP, \
+        TAB, Q,   W,   E,   R,   T,   Y,   U,   I,   O,   P,   LBRC,RBRC,BSLS,                       DEL, END, PGDN, \
+        CLCK, A,   S,   D,   F,   G,   H,   J,   K,   L,   SCLN,QUOT,     ENT,                                                       \
+        LSFT,     Z,   X,   C,   V,   B,   N,   M,   COMM,DOT, SLSH,     RSFT,                                    UP,        \
+        LCTL,TRNS,LALT,               SPC,               RALT, FN0, LGUI,RCTL,                   LEFT,DOWN,RGHT),
     /* Layer 1: Fn Media Layer */
     KEYMAP(\
         TRNS,     MPRV,MPLY,MNXT,MSTP,TRNS,TRNS,TRNS,TRNS, F9, F10 , F11,TRNS,      TRNS,TRNS,SLEP, \
