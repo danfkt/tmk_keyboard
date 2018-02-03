@@ -21,7 +21,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 *** MCU: Atmega 32u4
 *** Hardware: Teensy 2.0
 *** Creation date: 2018.01.08.
-*** Last modification date: 2018.01.29.
+*** Last modification date: 2018.02.03.
 **********************************************************************************
 */
 
