@@ -29,16 +29,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
  * scan matrix
  */
  
- /* Column pin configuration
- * col: 0   1   2   3   4   5   6   7   8   9   10  11  12  13  14  15  16
- * pin: F0  F1  F4  F5  F6  F7  B6  B5  B4  D7  D4  D5  C7  C6  D3  D2  D1
- */
- 
- /* Row pin configuration
- * row: 0   1   2   3   4    5
- * pin: B0  B1  B2  B3  B7  D0
- */ 
- 
 #include <stdint.h>
 #include <stdbool.h>
 #include <avr/io.h>
@@ -160,6 +150,11 @@ uint8_t matrix_key_count(void)
     return count;
 }
 
+ /* Column pin configuration
+ * col: 0   1   2   3   4   5   6   7   8   9   10  11  12  13  14  15  16
+ * pin: F0  F1  F4  F5  F6  F7  B6  B5  B4  D7  D4  D5  C7  C6  D3  D2  D1
+ */
+
 static void init_cols(void) {
     DDRF  &= ~(1 << 0 | 1 << 1 | 1 << 4 | 1 << 5 | 1 << 6 | 1 << 7);
     PORTF |=  (1 << 0 | 1 << 1 | 1 << 4 | 1 << 5 | 1 << 6 | 1 << 7);
@@ -191,6 +186,11 @@ static matrix_row_t read_cols(void) {
         (PIND & (1 << 2) ? 0 : (1UL << 15)) |
         (PIND & (1 << 1) ? 0 : (1UL << 16));
 }
+
+ /* Row pin configuration
+ * row: 0   1   2   3   4    5
+ * pin: B0  B1  B2  B3  B7  D0
+ */
 
 static void unselect_rows(void) {
     DDRB  &= ~0b10001111;
